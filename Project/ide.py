@@ -22,7 +22,7 @@ class AppInterface(QWidget):
     def init_ui(self):
         layout = QVBoxLayout()
 
-        self.label_status = QLabel("Selecione uma pasta com músicas .wav")
+        self.label_status = QLabel("Selecione uma pasta com músicas .wav ou .mp3")
         layout.addWidget(self.label_status)
 
         btn_selecionar_pasta = QPushButton("Selecionar Pasta de Músicas")
@@ -36,6 +36,10 @@ class AppInterface(QWidget):
         btn_nova = QPushButton("Analisar Nova Música")
         btn_nova.clicked.connect(self.analisar_nova)
         layout.addWidget(btn_nova)
+        
+        btn_cache = QPushButton("Limpar Cache")
+        btn_cache.clicked.connect(self.limpar_cache)
+        layout.addWidget(btn_cache)
 
         self.setLayout(layout)
 
@@ -61,14 +65,23 @@ class AppInterface(QWidget):
             QMessageBox.warning(self, "Atenção", "Carregue uma pasta de músicas primeiro.")
             return
 
-        caminho, _ = QFileDialog.getOpenFileName(self, "Selecione a nova música", filter="Áudio (*.wav)")
-        if caminho and caminho.endswith(".wav"):
+        caminho, _ = QFileDialog.getOpenFileName(self, "Selecione a nova música", filter="Áudio (*.wav *.mp3)")
+        if caminho and (caminho.endswith(".wav") or caminho.endswith(".mp3")):
             try:
                 self.organizador.sugerir_musicas_parecidas(caminho)
             except Exception as e:
                 QMessageBox.critical(self, "Erro", f"Erro ao analisar a música:\n{str(e)}")
         else:
             QMessageBox.information(self, "Arquivo inválido", "Por favor, selecione um arquivo .wav válido.")
+    
+    def limpar_cache(self):
+        cache_dir = "projeto/cache"
+        if os.path.exists(cache_dir):
+            for arquivo in os.listdir(cache_dir):
+                os.remove(os.path.join(cache_dir, arquivo))
+            QMessageBox.information(self, "Cache Limpo", "O cache foi limpo com sucesso.")
+        else:
+            QMessageBox.information(self, "Cache Inexistente", "Não há cache para limpar.")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
