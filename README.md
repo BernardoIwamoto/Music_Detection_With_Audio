@@ -16,12 +16,14 @@ parecido em grupos. Ideal para coleções de músicas, análise de covers e desc
 - Visualização gráfica dos grupos
   
 ## Requisitos
+```bash
 Python 3.8 ou superior
 librosa
 scikit-learn
 matplotlib
 PyQt5
 numpy
+```
 
 ## Como Usar a Interface
 python interface.py
