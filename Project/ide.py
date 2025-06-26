@@ -4,7 +4,12 @@ from PyQt5.QtWidgets import (
     QApplication, QWidget, QPushButton, QLabel,
     QFileDialog, QVBoxLayout, QMessageBox
 )
-from organizador import OrganizadorMusical  # Importa o código anterior (salve como 'organizador.py')
+from structure import OrganizadorMusical
+
+caminho_data = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
+
+organizador = OrganizadorMusical(caminho_data)
+
 
 class AppInterface(QWidget):
     def __init__(self):
