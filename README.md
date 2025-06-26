@@ -74,7 +74,11 @@ Distribuído sob a licença MIT. Veja LICENSE para mais informações
 Exemplo de como organizei a pasta do projeto:
 
 ![TelaInicial](./screenshots/TelaInicial.png)
+
 Dentro da pasta Projeto:
+
 ![TelaProjetos](./screenshots/TelaProjeto.png)
+
 Dentro da pasta Data
+
 ![TelaData](./screenshots/TelaData.png)
