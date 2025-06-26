@@ -3,11 +3,11 @@ Este projeto, Music Organizer, agrupa músicas por similaridade sonora usando ex
 Librosa, redução de dimensionalidade com PCA e agrupamento com KMeans. O sistema possui também
 uma interface gráfica desenvolvida em PyQt5. Projeto desenvolvido para disciplina de Computação Científica e Análise de Dados.
 
-### Visão Geral
+## Visão Geral
 O Music Organizer analisa arquivos de áudio .wav, extrai padrões sonoros e organiza músicas com som
 parecido em grupos. Ideal para coleções de músicas, análise de covers e descoberta sonora.
 
-### Funcionalidades
+## Funcionalidades
 - Leitura automática de músicas em uma pasta
 - Análise sonora com MFCC, cromas e contraste espectral
 - Redução de dimensionalidade (PCA)
@@ -15,7 +15,7 @@ parecido em grupos. Ideal para coleções de músicas, análise de covers e desc
 - Interface gráfica para selecionar pastas e músicas
 - Visualização gráfica dos grupos
   
-### Requisitos
+## Requisitos
 Python 3.8 ou superior
 librosa
 scikit-learn
@@ -23,14 +23,14 @@ matplotlib
 PyQt5
 numpy
 
-### Como Usar a Interface
+## Como Usar a Interface
 python interface.py
 Na interface, você poderá:
 - Selecionar uma pasta com músicas WAV
 - Visualizar o agrupamento sonoro
 - Analisar uma nova música para ver quais são parecidas
 
-### Organização de Arquivos
+## Organização de Arquivos
  ide.py    # Interface gráfica
  structure.py    # Lógica de agrupamento
  data/
@@ -46,12 +46,12 @@ _agrupar_musicas() aplica KMeans e cria os grupos.
 mostrar_mapa() exibe gráfico com os grupos de músicas.
 sugerir_musicas_parecidas(caminho) mostra as 5 músicas mais similares de acordo com o som.
 
-### Como Contribuir
+## Como Contribuir
 1. Faça um fork do projeto
 2. Crie uma branch (git checkout -b minha-feature)
 3. Commit suas mudanças (git commit -m 'Adiciona nova feature')
 4. Push para o repositório (git push origin minha-feature)
 5. Abra um Pull Request
 
-### Licença
+## Licença
 Distribuído sob a licença MIT. Veja LICENSE para mais informações
