@@ -4,7 +4,7 @@ Librosa, redução de dimensionalidade com PCA e agrupamento com KMeans. O siste
 uma interface gráfica desenvolvida em PyQt5. Projeto desenvolvido para disciplina de Computação Científica e Análise de Dados.
 
 ## Visão Geral
-O Music Organizer analisa arquivos de áudio .wav, extrai padrões sonoros e organiza músicas com som
+O Music Organizer analisa arquivos de áudio .wav ou .mp3, extrai padrões sonoros e organiza músicas com som
 parecido em grupos. Ideal para coleções de músicas, análise de covers e descoberta sonora.
 
 ## Funcionalidades
@@ -38,7 +38,7 @@ numpy
 python interface.py
 ```
 Na interface, você poderá:
-- Selecionar uma pasta com músicas WAV
+- Selecionar uma pasta com músicas WAV ou MP3
 - Visualizar o agrupamento sonoro
 - Analisar uma nova música para ver quais são parecidas
 
