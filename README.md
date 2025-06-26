@@ -26,7 +26,9 @@ numpy
 ```
 
 ## Como Usar a Interface
+```bash
 python interface.py
+```
 Na interface, você poderá:
 - Selecionar uma pasta com músicas WAV
 - Visualizar o agrupamento sonoro
