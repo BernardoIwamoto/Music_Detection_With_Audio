@@ -69,3 +69,6 @@ OrganizadorMusical classe principal que analisa os áudios.
 
 ## Licença
 Distribuído sob a licença MIT. Veja LICENSE para mais informações
+
+## Imagens
+Exemplo de como organizei a pasta do projeto:
