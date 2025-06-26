@@ -45,12 +45,12 @@ Na interface, você poderá:
  
 ## Documentação das Funções
 OrganizadorMusical classe principal que analisa os áudios.
-_extrair_caracteristicas() extrai vetores sonoros da música usando MFCC, chroma e contraste.
-_carregar_musicas() percorre a pasta selecionada e carrega todas as músicas válidas.
-_resumir_informacoes() aplica PCA para reduzir dimensionalidade.
-_agrupar_musicas() aplica KMeans e cria os grupos.
-mostrar_mapa() exibe gráfico com os grupos de músicas.
-sugerir_musicas_parecidas(caminho) mostra as 5 músicas mais similares de acordo com o som.
+- extrair_caracteristicas() extrai vetores sonoros da música usando MFCC, chroma e contraste.
+- carregar_musicas() percorre a pasta selecionada e carrega todas as músicas válidas.
+- resumir_informacoes() aplica PCA para reduzir dimensionalidade.
+- agrupar_musicas() aplica KMeans e cria os grupos.
+- mostrar_mapa() exibe gráfico com os grupos de músicas.
+- sugerir_musicas_parecidas(caminho) mostra as 5 músicas mais similares de acordo com o som.
 
 ## Como Contribuir
 1. Faça um fork do projeto
