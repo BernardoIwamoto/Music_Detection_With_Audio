@@ -18,6 +18,10 @@ parecido em grupos. Ideal para coleções de músicas, análise de covers e desc
 ## Dataset Utilizado
 
 Este projeto utiliza o seguinte dataset público do Kaggle: https://www.kaggle.com/datasets/arpanpathak/original-and-cover-song-pairs?resource=download
+
+### Detalhes
+
+Ao fazer o download do dataset, pode ser observado um arquivo WinRar que contem diversos dados e pastas que não utilizei. Em meu caso, extrai para a pasta do projeto apenas a pasta chamada covers32k e renomeei ela como data.
   
 ## Requisitos
 ```bash
