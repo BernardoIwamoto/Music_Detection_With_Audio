@@ -14,6 +14,10 @@ parecido em grupos. Ideal para coleções de músicas, análise de covers e desc
 - Agrupamento em grupos similares (KMeans)
 - Interface gráfica para selecionar pastas e músicas
 - Visualização gráfica dos grupos
+
+## Dataset Utilizado
+
+Este projeto utiliza o seguinte dataset público do Kaggle: https://www.kaggle.com/datasets/arpanpathak/original-and-cover-song-pairs?resource=download
   
 ## Requisitos
 ```bash
