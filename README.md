@@ -72,3 +72,6 @@ Distribuído sob a licença MIT. Veja LICENSE para mais informações
 
 ## Imagens
 Exemplo de como organizei a pasta do projeto:
+![TelaInicial](./screenshots/Captura de tela 2025-06-26 171236.png)
+![TelaProjetos](./screenshots/Captura de tela 2025-06-26 171533.png)
+![TelaData](./screenshots/Captura de tela 2025-06-26 171558.png)
