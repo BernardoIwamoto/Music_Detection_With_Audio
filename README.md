@@ -1,4 +1,4 @@
-### Music Detection by Sound
+## Music Detection by Sound
 Este projeto, Music Organizer, agrupa músicas por similaridade sonora usando extração de características de áudio com
 Librosa, redução de dimensionalidade com PCA e agrupamento com KMeans. O sistema possui também
 uma interface gráfica desenvolvida em PyQt5. Projeto desenvolvido para disciplina de Computação Científica e Análise de Dados.
