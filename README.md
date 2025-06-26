@@ -33,11 +33,13 @@ Na interface, você poderá:
 - Analisar uma nova música para ver quais são parecidas
 
 ## Organização de Arquivos
+ ```bash
  ide.py    # Interface gráfica
  structure.py    # Lógica de agrupamento
  data/
  Original Songs/
  Cover Songs/
+```
  
 ## Documentação das Funções
 OrganizadorMusical classe principal que analisa os áudios.
